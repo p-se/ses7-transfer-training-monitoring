@@ -6,7 +6,6 @@
     <h2>Subhead or Second Line</h2>
 </div>
 
-
 <!-- .slide: data-state="cover-image" id="cover-page-image" data-timing="20" data-menu-title="Cover slide with QR code" -->
 <div class="title">
     <h1>SUSE<sub>&reg;</sub> Presentation</h1>
