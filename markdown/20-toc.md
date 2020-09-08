@@ -1,8 +1,8 @@
 <!-- .slide: data-state="normal toc" id="agenda-1col" data-timing="20s" data-menu-title="Agenda with one column" -->
 
-## Content
+## Topics
 
-<div class="breadcrumbs">Table of Contents</div>
+<!-- <div class="breadcrumbs">Knowledge Transfer Training SES7 - Monitoring</div> -->
 
 1. Changes
 

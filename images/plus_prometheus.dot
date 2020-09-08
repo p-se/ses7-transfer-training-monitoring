@@ -1,0 +1,20 @@
+digraph G {
+    rankdir=TB
+    "Ceph Dashboard" -> Alertmanager [label="silences alerts"];
+    "Ceph Dashboard" -> Grafana [label="shows graphs"];
+    "Ceph Dashboard" -> "Prometheus 1" [label="list alerts"];
+    "Prometheus 1" [color="orange"];
+    "Prometheus 2" [color="orange"];
+    "Prometheus 1" -> "Node Exporter [1..n]" [label="scrapes data", color="orange"];
+    "Prometheus 1" -> "Prometheus Manager Module [1]" [label="scrapes data", color="orange"];
+    "Prometheus 1" -> Alertmanager [label="fires alerts", color="red"];
+    "Prometheus 2" -> "Node Exporter [1..n]" [label="scrapes data", color="orange"];
+    "Prometheus 2" -> "Prometheus Manager Module [1]" [label="scrapes data", color="orange"];
+    "Prometheus 2" -> Alertmanager [label="fires alerts", color="red"];
+    Alertmanager -> "Ceph Dashboard" [label="distributes alerts"];
+    // Alertmanager [color="orange"];
+    Grafana[color="green"];
+    Grafana -> "Prometheus 1" [label="requests data", color="green"];
+    Grafana -> "Prometheus 2" [label="requests data", color="green"];
+    // Notifications[color=green];
+}
