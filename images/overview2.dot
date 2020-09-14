@@ -1,14 +1,15 @@
 digraph G {
     rankdir=TB
+    "Ceph Dashboard" [color="green"];
     "Ceph Dashboard" -> Notifications [label="shows notifications"];
-    "Ceph Dashboard" -> Alertmanager [label="silences alerts", color="orange"];
-    "Ceph Dashboard" -> Grafana [label="shows graphs", color="orange"];
-    "Ceph Dashboard" -> Prometheus [label="list alerts", color="orange"];
+    "Ceph Dashboard" -> Alertmanager [label="silences alerts", color="green"];
+    "Ceph Dashboard" -> Grafana [label="shows graphs", color="green"];
+    "Ceph Dashboard" -> Prometheus [label="list alerts", color="green"];
     Prometheus [color="orange"];
     Prometheus -> "Node Exporter [1..n]" [label="scrapes data"];
     Prometheus -> "Prometheus Manager Module [1]" [label="scrapes data"];
     Prometheus -> Alertmanager [label="fires alerts"];
-    Alertmanager -> "Ceph Dashboard" [label="distributes alerts"];
+    Alertmanager -> "Ceph Dashboard" [label="distributes alerts", color="orange"];
     Alertmanager [color="orange"];
     Grafana[color="orange"];
     Grafana -> Prometheus [label="requests data"];

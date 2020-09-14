@@ -12,7 +12,7 @@
 <!-- Ceph Dashboard -->
 <g id="node1" class="node">
 <title>Ceph Dashboard</title>
-<ellipse fill="none" stroke="green" cx="276.54" cy="-279" rx="69.59" ry="18"/>
+<ellipse fill="none" stroke="black" cx="276.54" cy="-279" rx="69.59" ry="18"/>
 <text text-anchor="middle" x="276.54" y="-275.3" font-family="Times,serif" font-size="14.00">Ceph Dashboard</text>
 </g>
 <!-- Notifications -->
@@ -31,47 +31,47 @@
 <!-- Alertmanager -->
 <g id="node3" class="node">
 <title>Alertmanager</title>
-<ellipse fill="none" stroke="orange" cx="245.54" cy="-18" rx="59.59" ry="18"/>
+<ellipse fill="none" stroke="black" cx="245.54" cy="-18" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="245.54" y="-14.3" font-family="Times,serif" font-size="14.00">Alertmanager</text>
 </g>
 <!-- Ceph Dashboard&#45;&gt;Alertmanager -->
 <g id="edge2" class="edge">
 <title>Ceph Dashboard&#45;&gt;Alertmanager</title>
-<path fill="none" stroke="green" d="M256.83,-261.45C232.96,-240 194.06,-200.08 178.54,-156 163.99,-114.63 196.32,-69.44 220.96,-42.69"/>
-<polygon fill="green" stroke="green" points="223.61,-44.98 227.98,-35.33 218.54,-40.15 223.61,-44.98"/>
+<path fill="none" stroke="black" d="M256.83,-261.45C232.96,-240 194.06,-200.08 178.54,-156 163.99,-114.63 196.32,-69.44 220.96,-42.69"/>
+<polygon fill="black" stroke="black" points="223.61,-44.98 227.98,-35.33 218.54,-40.15 223.61,-44.98"/>
 <text text-anchor="middle" x="216.54" y="-144.8" font-family="Times,serif" font-size="14.00">silences alerts</text>
 </g>
 <!-- Grafana -->
 <g id="node4" class="node">
 <title>Grafana</title>
-<ellipse fill="none" stroke="orange" cx="369.54" cy="-192" rx="38.99" ry="18"/>
+<ellipse fill="none" stroke="black" cx="369.54" cy="-192" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="369.54" y="-188.3" font-family="Times,serif" font-size="14.00">Grafana</text>
 </g>
 <!-- Ceph Dashboard&#45;&gt;Grafana -->
 <g id="edge3" class="edge">
 <title>Ceph Dashboard&#45;&gt;Grafana</title>
-<path fill="none" stroke="green" d="M294.92,-261.21C309.25,-248.11 329.3,-229.78 345.01,-215.43"/>
-<polygon fill="green" stroke="green" points="347.75,-217.66 352.77,-208.33 343.03,-212.49 347.75,-217.66"/>
+<path fill="none" stroke="black" d="M294.92,-261.21C309.25,-248.11 329.3,-229.78 345.01,-215.43"/>
+<polygon fill="black" stroke="black" points="347.75,-217.66 352.77,-208.33 343.03,-212.49 347.75,-217.66"/>
 <text text-anchor="middle" x="366.54" y="-231.8" font-family="Times,serif" font-size="14.00">shows graphs</text>
 </g>
 <!-- Prometheus -->
 <g id="node5" class="node">
 <title>Prometheus</title>
-<ellipse fill="none" stroke="orange" cx="453.54" cy="-105" rx="52.79" ry="18"/>
+<ellipse fill="none" stroke="green" cx="453.54" cy="-105" rx="52.79" ry="18"/>
 <text text-anchor="middle" x="453.54" y="-101.3" font-family="Times,serif" font-size="14.00">Prometheus</text>
 </g>
 <!-- Ceph Dashboard&#45;&gt;Prometheus -->
 <g id="edge4" class="edge">
 <title>Ceph Dashboard&#45;&gt;Prometheus</title>
-<path fill="none" stroke="green" d="M339.12,-271.13C362.33,-266.18 387.79,-257.66 407.54,-243 444.1,-215.89 449.07,-199.77 461.54,-156 463.67,-148.56 463.38,-140.33 462.1,-132.73"/>
-<polygon fill="green" stroke="green" points="465.49,-131.86 459.86,-122.88 458.67,-133.41 465.49,-131.86"/>
+<path fill="none" stroke="black" d="M339.12,-271.13C362.33,-266.18 387.79,-257.66 407.54,-243 444.1,-215.89 449.07,-199.77 461.54,-156 463.67,-148.56 463.38,-140.33 462.1,-132.73"/>
+<polygon fill="black" stroke="black" points="465.49,-131.86 459.86,-122.88 458.67,-133.41 465.49,-131.86"/>
 <text text-anchor="middle" x="480.54" y="-188.3" font-family="Times,serif" font-size="14.00">list alerts</text>
 </g>
 <!-- Alertmanager&#45;&gt;Ceph Dashboard -->
 <g id="edge8" class="edge">
 <title>Alertmanager&#45;&gt;Ceph Dashboard</title>
-<path fill="none" stroke="orange" d="M247.59,-36.06C252.85,-80.03 266.91,-197.54 273.3,-250.93"/>
-<polygon fill="orange" stroke="orange" points="269.85,-251.49 274.51,-261.01 276.8,-250.66 269.85,-251.49"/>
+<path fill="none" stroke="black" d="M247.59,-36.06C252.85,-80.03 266.91,-197.54 273.3,-250.93"/>
+<polygon fill="black" stroke="black" points="269.85,-251.49 274.51,-261.01 276.8,-250.66 269.85,-251.49"/>
 <text text-anchor="middle" x="307.54" y="-144.8" font-family="Times,serif" font-size="14.00">distributes alerts</text>
 </g>
 <!-- Grafana&#45;&gt;Prometheus -->
@@ -84,8 +84,8 @@
 <!-- Prometheus&#45;&gt;Alertmanager -->
 <g id="edge7" class="edge">
 <title>Prometheus&#45;&gt;Alertmanager</title>
-<path fill="none" stroke="black" d="M421.04,-90.72C385.55,-76.21 328.51,-52.91 289.15,-36.82"/>
-<polygon fill="black" stroke="black" points="290.12,-33.44 279.54,-32.89 287.48,-39.92 290.12,-33.44"/>
+<path fill="none" stroke="green" d="M421.04,-90.72C385.55,-76.21 328.51,-52.91 289.15,-36.82"/>
+<polygon fill="green" stroke="green" points="290.12,-33.44 279.54,-32.89 287.48,-39.92 290.12,-33.44"/>
 <text text-anchor="middle" x="390.54" y="-57.8" font-family="Times,serif" font-size="14.00">fires alerts</text>
 </g>
 <!-- Node Exporter [1..n] -->
@@ -97,8 +97,8 @@
 <!-- Prometheus&#45;&gt;Node Exporter [1..n] -->
 <g id="edge5" class="edge">
 <title>Prometheus&#45;&gt;Node Exporter [1..n]</title>
-<path fill="none" stroke="black" d="M488.18,-91.37C527.39,-77.06 591.62,-53.63 636.33,-37.32"/>
-<polygon fill="black" stroke="black" points="637.64,-40.57 645.84,-33.85 635.24,-33.99 637.64,-40.57"/>
+<path fill="none" stroke="green" d="M488.18,-91.37C527.39,-77.06 591.62,-53.63 636.33,-37.32"/>
+<polygon fill="green" stroke="green" points="637.64,-40.57 645.84,-33.85 635.24,-33.99 637.64,-40.57"/>
 <text text-anchor="middle" x="617.04" y="-57.8" font-family="Times,serif" font-size="14.00">scrapes data</text>
 </g>
 <!-- Prometheus Manager Module [1] -->
@@ -110,8 +110,8 @@
 <!-- Prometheus&#45;&gt;Prometheus Manager Module [1] -->
 <g id="edge6" class="edge">
 <title>Prometheus&#45;&gt;Prometheus Manager Module [1]</title>
-<path fill="none" stroke="black" d="M453.54,-86.8C453.54,-75.16 453.54,-59.55 453.54,-46.24"/>
-<polygon fill="black" stroke="black" points="457.05,-46.18 453.54,-36.18 450.05,-46.18 457.05,-46.18"/>
+<path fill="none" stroke="green" d="M453.54,-86.8C453.54,-75.16 453.54,-59.55 453.54,-46.24"/>
+<polygon fill="green" stroke="green" points="457.05,-46.18 453.54,-36.18 450.05,-46.18 457.05,-46.18"/>
 <text text-anchor="middle" x="487.04" y="-57.8" font-family="Times,serif" font-size="14.00">scrapes data</text>
 </g>
 </g>

@@ -6,13 +6,14 @@ digraph G {
     "Ceph Dashboard" -> Prometheus [label="list alerts"];
     // Prometheus -> "Node Exporter [1..n]" [label="scrapes data"];
     // Prometheus -> "Prometheus Manager Module [1]" [label="scrapes data"];
-    Prometheus -> "Alertmanager 1" [label="fires alerts", color="orange"];
-    Prometheus -> "Alertmanager 2" [label="fires alerts", color="orange"];
-    "Alertmanager 1" -> "Ceph Dashboard" [label="distributes alerts"];
+    Prometheus -> "Alertmanager 1" [label="fires alerts", color="green"];
+    Prometheus -> "Alertmanager 2" [label="fires alerts", color="green"];
+    "Alertmanager 1" -> "Ceph Dashboard" [label="distributes alerts", color="red"];
     // "Alertmanager 2" -> "Ceph Dashboard" [label="distributes alerts"];
-    "Alertmanager 1" -> "Alertmanager 2" [color="red"];
-    "Alertmanager 2" [color="red"];
-    "Alertmanager 2" -> "Alertmanager 1" [color="red"];
+    "Alertmanager 1" [color="orange"];
+    "Alertmanager 1" -> "Alertmanager 2" [color="orange"];
+    "Alertmanager 2" [color="orange"];
+    "Alertmanager 2" -> "Alertmanager 1" [color="orange"];
     // Grafana -> Prometheus [label="requests data"];
     // Notifications[color=green];
 }
